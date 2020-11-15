@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buyCoinsChallenge</title>
+    <script
+      src="https://kit.fontawesome.com/2277b19b6c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-menu">
+          <div class="icons">
+            <div class="nav-btn" id="two" onclick="myFunction()" style="cursor: pointer;">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-logo" id="one">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="navification" id="three">
+              <i class="far fa-bell"></i>
+            </div>
+          </div>
+          <div class="nav-content" id="nav-content">
+            <div class="contentright">
+              <div class="nav-item"><input type="text" id="navsearch" /></div>
+              <hr />
+              <div class="nav-item">
+                <b>pull requests</b>
+              </div>
+              <hr />
+              <div class="nav-item">
+                <b>issues</b>
+              </div>
+              <hr />
+              <div class="nav-item">
+                <b>codespaces</b>
+              </div>
+              <hr />
+              <div class="nav-item">
+                <b>marketplace</b>
+              </div>
+              <hr />
+              <div class="nav-item">
+                <b>explore</b>
+              </div>
+            </div>
+            <div class="contentleft">
+              <div class="nav-item" id="bell"><i class="far fa-bell"></i></div>
+              <div class="nav-item" style="display: flex" id="add">
+                <button>
+                  <i class="fas fa-plus"></i><i class="fa fa-caret-down"></i>
+                </button>
+              </div>
+              <div class="nav-item" style="display: flex">
+                <button id="user"></button><i class="fa fa-caret-down"></i
+                ><b id="login"></b>
+              </div>
+              <div class="nav-item" id="logout" style="display: flex">
+                <i class="fas fa-sign-out-alt"></i><b>sign out</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="repositories">
+        <div class="about">
+          <div class="image">
+            <img src="" id="userimage" />
+            <div class="names">
+              <h1 id="name" style="font-weight: bold"></h1>
+              <h2 id="loginn" style="color: #959da5; font-weight: 300"></h2>
+            </div>
+            <div>
+              <button class="btndesktop" style="margin-top: 1em">
+                <i class="far fa-smile"></i>
+              </button>
+            </div>
+          </div>
+          <div class="userinfo">
+            <h1 id="names" style="font-weight: 500"></h1>
+            <h2 id="logins" style="color: #959da5; font-weight: 300"></h2>
+            <br />
+            <button class="btnmobile" style="margin-top: 1em">
+              set status
+            </button>
+            <p id="userstatus"></p>
+
+            <button class="editbutton" style="margin-top: 1em">
+              Edit profile
+            </button>
+            <br />
+            <div
+              class="follows"
+              style="display: flex; justify-content: space-between"
+            >
+              <div id="followers">
+                <i class="fas fa-user-friends"></i
+                ><small id="followertext" class="text"></small>
+                <small> followers</small>
+              </div>
+              <div id="followers">
+                <small id="followingtext" class="text"></small>
+                <small> following</small>
+              </div>
+              <div id="followers">
+                <i class="far fa-star"></i
+                ><small id="stars" class="text"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="overviewtab">
+            <div class="overview"><i class="fas fa-book-open"></i>overview</div>
+            <div class="repo"><i class="fas fa-book"></i>repositories</div>
+            <div class="overview">
+              <i class="far fa-calendar-alt"></i>projects
+            </div>
+            <div class="overview"><i class="fas fa-cube"></i>packages</div>
+          </div>
+          <div class="findrepo">
+            <input
+              type="search"
+              id="repofind"
+              placeholder="find a repository.."
+            />
+          </div>
+          <br />
+          <hr style="border: none; height: 1px; background-color: #eaecef" />
+          <p id="publicrepos"></p>
+          <hr style="border: none; height: 1px; background-color: #eaecef" />
+          <div class="repolist"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

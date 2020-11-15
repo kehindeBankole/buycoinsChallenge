@@ -1,0 +1,328 @@
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+main {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+#navsearch {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+img#userimage {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+}
+
+nav {
+  background-color: #24292e;
+  color: white;
+  padding: 15px 2em;
+  position: relative;
+}
+#navsearch {
+  padding: 5px;
+  padding-left: 15px;
+  background: transparent;
+  border: 1px solid gray;
+  outline: 0;
+  border-radius: 5px;
+}
+.nav-content {
+  display: none;
+  text-transform: capitalize;
+  margin-top: 2em;
+}
+.icons {
+  display: flex !important;
+  justify-content: space-between;
+}
+.icons .fas,
+.icons .fab,
+.icons .far {
+  font-size: 2em;
+}
+.fa-caret-down {
+  font-size: 12px !important;
+  padding: 3px 5px;
+}
+
+.contentright .nav-item:hover {
+  color: #959da5;
+  cursor: pointer;
+}
+.contentleft i {
+  font-size: 1.2em;
+}
+.contentleft #login {
+  display: block;
+}
+.contentleft #add,
+.contentleft #bell {
+  display: none !important;
+}
+.contentleft #logout {
+  display: block;
+}
+.contentleft .fa-sign-out-alt {
+  margin-right: 10px;
+}
+.contentleft #user {
+  background-size: cover;
+  background-position: center;
+  font-size: 1.2em;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+}
+.nav-content > .contentright > div,
+.nav-content > .contentleft > div {
+  padding: 10px 0;
+}
+.overviewtab > div {
+  text-transform: capitalize;
+}
+.overviewtab i {
+  margin-right: 8px;
+  color: #959da5;
+  display: none;
+}
+.repositories {
+  display: block;
+  padding: 5px 10px;
+}
+.image {
+  position: relative;
+}
+.repolist p {
+  font-weight: 200;
+}
+
+.repositories::after {
+  display: none;
+  position: absolute;
+  content: "";
+  /* border: 1px solid #eaecef; */
+  background-color: #eaecef;
+  height: 0.1px;
+  top: 120;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -999;
+}
+
+.repolist a {
+  color: #0366d6;
+}
+.repolist a:hover {
+  text-decoration: underline;
+}
+/* .repositories .about {
+  display: grid;
+  grid-template-columns: 100px auto;
+  padding: 1em;
+} */
+.follows {
+  margin-top: 1em;
+  color: #959da5;
+}
+.follows i {
+  margin-right: 10px;
+  color: #959da5;
+  font-size: 1em;
+}
+.follows .text {
+  font-weight: bold;
+  margin-right: 2px;
+}
+#followers {
+  display: flex;
+}
+.names {
+  padding: 10px;
+}
+
+.btndesktop {
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid #959da5;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  right: 5%;
+  display: none;
+  outline: 0;
+}
+#userstatus {
+  margin-top: 1em;
+}
+.btnmobile,
+.editbutton {
+  background: #f3f4f6;
+  border-radius: 5px;
+  border: 1px solid rgb(167, 167, 167);
+  width: 100%;
+  outline: 0 !important;
+  text-align: left;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.contentleft button {
+  display: flex;
+  background: transparent;
+  border: 0;
+  color: white;
+  outline: 0;
+}
+.repositories .details .overviewtab {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  justify-content: space-between;
+}
+.userinfo #name,
+.userinfo #loginn {
+  display: block !important;
+}
+.findrepo {
+  margin-top: 2em;
+}
+.image {
+  display: flex;
+  padding: 0;
+}
+.image #name,
+.image #login {
+  display: block !important;
+}
+.userinfo #names,
+.userinfo #logins {
+  display: none !important;
+}
+.contentright #navsearch {
+  width: 100%;
+}
+.contentright hr {
+  border: none;
+  height: 0.2px;
+  background-color: #eaecef;
+}
+.about {
+  display: block;
+  margin-bottom: 1em;
+}
+#repofind {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #eaecef;
+  outline: 0;
+  text-transform: capitalize;
+}
+#publicrepos {
+  padding: 10px 0;
+}
+@media (min-width: 992px) {
+  nav {
+    padding: 5px 2em;
+  }
+  .nav-btn,
+  .navification {
+    display: none;
+  }
+  .nav-menu {
+    display: grid !important;
+    grid-template-columns: 40px auto auto;
+  }
+  .nav-content .contentright,
+  .nav-content .contentleft {
+    display: flex !important;
+  }
+  .nav-content {
+    display: block;
+    display: grid !important;
+    grid-template-columns: auto 200px !important;
+    margin: 0;
+  }
+  .nav-content > .contentright > div,
+  .nav-content > .contentleft > div {
+    padding: 10px 18px;
+  }
+  .repositories {
+    display: grid;
+    grid-template-columns: 400px auto;
+    padding: 2em 2em;
+  }
+  .repositories .about {
+    display: block;
+  }
+  img#userimage {
+    height: 300px;
+    width: 300px;
+  }
+  .btndesktop {
+    display: block;
+  }
+  .btnmobile {
+    display: none;
+  }
+  .contentleft #login {
+    display: none;
+  }
+  .nav-logo {
+    margin-top: 10px;
+  }
+  .repositories::after {
+    display: block;
+  }
+
+  .overviewtab i {
+    display: inline-block;
+  }
+  .image #name,
+  .image #loginn {
+    display: none !important;
+  }
+  .userinfo #names,
+  .userinfo #logins {
+    display: block !important;
+  }
+  .about {
+    padding: 0 2em;
+  }
+  .contentleft #add,
+  .contentleft #bell {
+    display: block !important;
+  }
+  .contentleft #logout {
+    display: none !important;
+  }
+  .contentright .nav-item b {
+    font-size: small;
+    font-weight: 500;
+  }
+  .contentright hr {
+    display: none;
+  }
+}
